@@ -12,10 +12,22 @@ Description: A complete DevOps pipeline using Linux, Docker, GitHub Actions, Nom
 
 Build the image:
 ```
-docker build -t hello-devops .
+docker build -t devops .
 ```
 
 Run the container:
 ```
-docker run hello-devops
+docker run devops
+```
+
+## Nomad Deployment
+
+Start Nomad in dev mode:
+```bash
+sudo nomad agent -dev
+```
+
+Run the job:
+```bash
+nomad job run nomad/hello.nomad
 ```
