@@ -27,28 +27,28 @@ devops-intern-final/
 
 ## Step 1: Git & GitHub
 Repository initialized with README and sample script.
-```bash
+
 git clone https://github.com/Prabhas55/devops-intern-final.git
 cd devops-intern-final
 python3 hello.py
-```
+
 
 ---
 
 ## Step 2: Linux Scripting
-```bash
+
 chmod +x scripts/sysinfo.sh
 ./scripts/sysinfo.sh
-```
+
 
 ---
 
 ## Step 3: Docker
 Build and run the container:
-```bash
-docker build -t hello-devops .
-docker run hello-devops
-```
+
+docker build -t devops .
+docker run devops
+
 
 ---
 
@@ -59,7 +59,7 @@ Check status in the Actions tab or via the badge above.
 ---
 
 ## Step 5: Nomad Deployment
-```bash
+
 # Start Nomad
 sudo nomad agent -dev
 
@@ -68,12 +68,11 @@ nomad job run nomad/hello.nomad
 
 # Check status
 nomad job status hello
-```
+
 
 ---
 
 ## Step 6: Monitoring with Grafana Loki
-```bash
 # Start Loki
 docker run -d --name loki -p 3100:3100 grafana/loki:latest
 
@@ -85,4 +84,4 @@ TS=$(date +%s)000000000 && curl -X POST http://localhost:3100/loki/api/v1/push -
 
 # View logs
 curl -G http://localhost:3100/loki/api/v1/query_range --data-urlencode 'query={job="hello"}' --data-urlencode 'start=2026-04-23T00:00:00Z' --data-urlencode 'end=2026-04-24T00:00:00Z'
-```
+
