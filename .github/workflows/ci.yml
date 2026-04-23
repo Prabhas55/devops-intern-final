@@ -19,4 +19,4 @@ jobs:
           python-version: '3.11'
 
       - name: Run hello.py
-        run: python hello.py
+        run: python3 hello.py
