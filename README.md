@@ -85,3 +85,9 @@ TS=$(date +%s)000000000 && curl -X POST http://localhost:3100/loki/api/v1/push -
 # View logs
 curl -G http://localhost:3100/loki/api/v1/query_range --data-urlencode 'query={job="hello"}' --data-urlencode 'start=2026-04-23T00:00:00Z' --data-urlencode 'end=2026-04-24T00:00:00Z'
 
+
+
+
+<img width="1918" height="931" alt="docker" src="https://github.com/user-attachments/assets/c968267e-c2b7-4d5b-9672-11dcf16c41d6" />
+
+<img width="1918" height="1016" alt="monitioringloki" src="https://github.com/user-attachments/assets/67b637cb-a2ff-4beb-81c5-b85c45b33a97" />
