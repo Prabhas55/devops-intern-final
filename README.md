@@ -1,6 +1,6 @@
 # DevOps Intern Final Assessment
 
-![CI](https://github.com/prabhas55/devops-intern-final/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/Prabhas55/devops-intern-final/actions/workflows/ci.yml/badge.svg?branch=main)
 
 Name: Prabhas Nalajala  
 
